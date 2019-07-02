@@ -100,14 +100,43 @@ body {
 
 .page-subtitle {
   color: #fff;
-  font-size: 80px;
+  font-size: 70px;
 }
 
-/* intro*/
-.intro p {
+.btn {
+  border: solid f1c40f;
+  padding: 20px 40px;
+  text-decoration: none;
+  background-color: #f1c40f;
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+/* services */
+.services p {
   width: 70%;
-  margin: 40px auto;
-  font-size: 24px;
+  margin: 10px auto;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.services i {
+  border: solid;
+  border-radius: 90px;
+  border-color: #f1c40f;
+  color: #f1c40f;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.services .row {
+  padding: 20px;
+}
+
+.services h1 {
+  font-size: 50px;
+  margin-bottom: 0;
 }
 
 /* gallery */
