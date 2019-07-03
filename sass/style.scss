@@ -27,18 +27,16 @@ body {
 }
 
 .section {
-    padding: 108px;
+    padding: 50px;
 }
 
 .section-title {
     font-family: $font-header;
-    position: relative;
-    font-size: 36px;
-    margin: 20px 0 50px 0;
+    font-size: 50px;
+    margin: 0;
 }
 
 .section-title::after {
-    background: $color-main;
     position: absolute;
     content: '';
     bottom: -12px;
@@ -81,6 +79,7 @@ body {
         color: white;
     }
 }
+
 /* splash */
 
 .splash {
@@ -154,94 +153,52 @@ body {
 
 .row {
     display: flex;
+    height: 500px;
 }
 
 .gallery {
-    position: relative;
     width: 33.3333%;
     height: 300px;
-    
+    margin: 100px;
+
     img {
-        position: absolute;
-        object-fit: cover;
+        object-fit:cover;
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
+        margin: 15px;
     }
 }
 
-.gallery:hover .overlay {
-    display: block;
-    background: rgba(0, 0, 0, .5);
+.portfolio {
+    background: #ecf0f1;
+    height: 1300px
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.5s;
-}
-
-.button {
-    position: absolute;
-    width: 100%;
-    top: 100px;
-    opacity: 0;
-    transition: opacity .35s;
-    
-    a {
-        width: 200px;
-        padding: 10px 35px;
-        background: $color-main;
-        text-align: center;
-        z-index: 1;
-        color: white;
-        text-decoration: none;
-    }
-    p {
-        color: white;
-    }
-}
-
-.gallery:hover .button {
-    opacity: 1;
-}
-
-.more {
-    position: relative;
-    width: 100%;
-    top: 50px;
-    text-align: center;
-    cursor: pointer;
-    margin-bottom: 70px;
-    
-    a {
-        width: 25%;
-        padding: 12px 48px;
-        text-align: center;
-        background: $color-main;
-        font-family: $font-text;
-        text-decoration: none;
-        color: white;
-        &:hover {
-            opacity: 0.8;
-            transition: opacity .35s;
-        }
-    }
-}
-
 /* footer */
 
-footer {
-    background: #242424;
-}
-
-.page-footer {
-    color: white;
-    height: 100%;
-    padding: 1px;
+.footer {
+    padding: 48px 0;
+    text-align: center;
+    ul {
+        margin: 0;
+        li {
+            display: inline-block;
+            background: white;
+            width: 60px;
+            height: 20px;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+    a {
+        font-size: 20px;
+        color: white;
+        background: black;
+        border-radius: 50%;
+        padding: 10px 15px;
+    }
+    p {
+        text-align: left;
+        margin: 0;
+        padding-left: 100px;
+    }
 }
